@@ -1,0 +1,3 @@
+.jornada-only .nav-link[data-view="dossier"] {
+  display: none;
+}
