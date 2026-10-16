@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#101312">
+    <meta name="description" content="Sobrevive a un lunes en una empresa de software. Doce retos técnicos, de Java básico a producción.">
+    <title>La jornada — Lunes en producción</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="jornada-only.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body class="jornada-only" data-storage-key="lunes-en-produccion-jornada-v1">
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Navegación principal">
+        <a class="brand" href="jornada.html" aria-label="La jornada, inicio">
+          <span class="brand-mark"><span></span><span></span><span></span></span>
+          <span>LUNES<span class="brand-muted">.INC</span></span>
+        </a>
+
+        <div class="sidebar-label">TU ESCRITORIO</div>
+        <button class="nav-link active" data-view="game" type="button"><span class="nav-icon">▦</span> La jornada <span class="nav-indicator"></span></button>
+        <div class="sidebar-divider"></div>
+        <div class="sidebar-label">EL LUNES, EN DIRECTO</div>
+        <div class="mini-status">
+          <div class="mini-status-top"><span class="status-dot"></span><span id="sidebar-status">Aún no has fichado</span></div>
+          <div class="mini-progress"><span id="sidebar-progress"></span></div>
+          <div class="mini-progress-label"><span id="sidebar-progress-text">0 de 12 investigaciones</span><span id="sidebar-percent">0%</span></div>
+        </div>
+
+        <div class="sidebar-spacer"></div>
+        <div class="sidebar-foot">
+          <span class="avatar avatar-you">TÚ</span>
+          <span><strong>Desarrollador/a</strong><small>Contrato: indefinidamente incierto</small></span>
+          <span class="more-dots">···</span>
+        </div>
+      </aside>
+
+      <main class="main-area">
+        <header class="topbar">
+          <div class="breadcrumb">LUNES, 16 DE JUNIO <span>/</span> <span id="breadcrumb-view">MI ESCRITORIO</span></div>
+          <div class="topbar-right">
+            <span class="environment-pill"><span></span> PRODUCCIÓN (CON CUIDADO)</span>
+            <span class="topbar-divider"></span>
+            <span class="weather">☁ &nbsp; 19° en la oficina</span>
+          </div>
+        </header>
+
+        <section id="game-view" class="view"></section>
+        <section id="dossier-view" class="view hidden" aria-hidden="true"></section>
+      </main>
+    </div>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
